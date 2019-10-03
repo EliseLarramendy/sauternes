@@ -16,16 +16,13 @@ header {
   
     flex: 1 1 70%;
     max-height: 200px;
-    margin: auto;
     order: 2;
     margin: auto;
-    padding: 1% 3% 1% 15%;
+    padding: 1% 10%;
     background-color: yellow;
  
 
 }
-
-
 
 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -67,6 +64,7 @@ p{
     text-align: justify;
     padding: 0.5em;
 }
+
 q{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.1em;
@@ -95,6 +93,7 @@ table{
     align-items: center;
    
 }
+
 th {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1,2em;
@@ -102,6 +101,7 @@ th {
     text-align: center;
     padding: 1.2em;
 }
+
 td {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
@@ -109,6 +109,24 @@ td {
     padding: 1em;
 }
 
+.image {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em;
+ 
+ }
+
+ img{
+    height: 30vh; 
+    object-fit: cover;
+ }
+
+ figcaption{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 1em;
+     font-style: italic;
+ }
 
 
 aside{
@@ -130,25 +148,35 @@ aside nav:before {
 
 }
 
-
-
 aside:hover {
     width: 15%;
 }
+
 aside:hover ul {
     display: flex;
     flex-flow: column wrap;
-
 }
+
 aside nav:after{
     content:"◄";
     display:none;
 }
 
 section{
-    padding: 2% 3% 3% 15%;
+    margin: auto;
+    padding: 1% 10%;
     order: 3;
     flex: 1 1 80%;
     clear: right;
+
+}
+
+ul, ol{
+    margin-left: 2vw;
+
+}
+
+
+li{
 
 }
