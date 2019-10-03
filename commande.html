@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Château Dudon - Commande</title>
 </head>
+
 <body>
-    Bon de commande à faire en formulaire.
-    
+    <header>
+        <h1>Château Dudon et Gallien<h1>
+        <h2>Bon de commande</h2>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li>Le sauternais</li>
+                <ul>
+                    <li><a href="villageSauternes.html">Le village de Sauternes</a></li>
+                    <li><a href="situation.html">Notre situation</a></li>
+                </ul>
+                <li><a href="histoire.html">Notre histoire</a> </li>
+                <li>Culture et cépages</li>
+                <ul>
+                    <li><a href="cepages.html">Les cépages du Sauternes</a></li>
+                    <li><a href="terroir.html">Notre terroir</a></li>
+                    <li><a href="vignoble.html">Notre vignoble</a></li>
+                    <li><a href="culture.html">La culture Bio</a></li>
+                    <li><a href="recolte.html">La récolte</a></li>
+
+                </ul>
+                <li><a href="vins.html">Nos vins</a>
+                    <ul>
+                        <li><a href="dudon.html">Château Dudon et ses millésimes</a></li>
+                        <li><a href="gallien.html">"Gallien de Chateau Dudon et ses millésimes</a></li>
+                    </ul>
+                </li>
+                <li><a href="commande.html">Bon de commande</a></li>
+                <li><a href="gite.html">Notre gîte Bacchus</a></li>
+                <li><a href="contact.html">Contact et visites</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+        <form id="commande" method="post">
+            <fieldset id="commandePersonne">
+                <legend>Vos informations personnelles</legend>
+                <input type="radio" id="sexeMr" name="sexe" value="monsieur" checked="checked"/>
+                <label for="sexeMr">Monsieur</label>
+                <input type="radio" id="sexeMme" name="sexe" value="madame"/>
+                <label for="sexeMme">Madame</label><br/>
+                <label>Nom</label>
+                <input type="text" name="nom" placeholder="Bacchus"/><br/>
+                <label>Prénom</label>
+                <input type="text" name="prenom" placeholder="Dyonisos"/><br/>
+                <label>Mail</label>
+                <input type="email" name="email" placeholder="dyonisos.bacchus@sauternes.fr"/><br/>
+                <label>Adresse</label>
+                <input type="text" name="adresse" placeholder="1 route des vins"/><br/>
+                <label>Ville</label>
+                <input type="text" name="ville" placeholder="Sauternes"/><br/>
+                <label>Code postal</label>
+                <input type="number" name="codePsotal" placeholder="1 route des vins"/><br/>
+                <label>Informations pour la livraison</label>
+                <input type="text" name="livraison" placeholder="Livraison souhaitée entre l'apéro du midi et l'apéro du soir. Code porte: 1234*"/><br/>
+                <label>Téléphone</label>
+                <input type="tel" name="téléphone" placeholder="0101010101"/><br/>
+                <label>Portable</label>
+                <input type="tel" name="portable" placeholder="0607060706"/><br/>
+
+
+            </fieldset>
+            <fieldset id="dudon2015">
+                <legend>Château Dudon 2015</legend>
+                <label>Bouteille de 50 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="16.80" readonly/> <label>Total:</label><input type="number" step="16.80" value="0" min="0"/> <br/>
+                <label>Bouteille de 75 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="25" readonly/> <label>Total:</label><input type="number" step="25" value="0" min="0"/> <br/>
+                <label>Bouteille de 150 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="51" readonly/> <label>Total:</label><input type="number" step="51" value="0" min="0"/> <br/>
+                <label>Bouteille de 300 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="123" readonly/> <label>Total:</label><input type="number" step="123" value="0" min="0"/> <br/>
+                <label>Bouteille de 600 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="260" readonly/> <label>Total:</label><input type="number" step="260" value="0" min="0"/> <br/>
+            </fieldset>
+            <fieldset id="dudon2014">
+                <legend>Château Dudon 2014</legend>
+                <label>Bouteille de 50 cl <span class="italic">Non disponible</span></label> <label> Quantité :</label>
+                <input type="number" value="0" readonly/> <label>Prix:</label><input type="number" value="0" readonly/> <label>Total:</label><input type="number" value="0" readonly/> <br/>
+                <label>Bouteille de 75 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="24" readonly/> <label>Total:</label><input type="number" step="24" value="0" min="0"/> <br/>
+                <label>Bouteille de 150 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="49" readonly/> <label>Total:</label><input type="number" step="49" value="0" min="0"/> <br/>
+                <label>Bouteille de 300 cl</label> <label> Quantité :</label>
+                <input type="number" step="1" value="0" min="0"/> <label>Prix:</label><input type="number" value="118" readonly/> <label>Total:</label><input type="number" step="118" value="0" min="0"/> <br/>
+                <label>Bouteille de 600 cl <span class="italic">Non disponible</span></label> <label> Quantité :</label>
+                <input type="number" value="0" readonly/> <label>Prix:</label><input type="number" value="260" readonly/> <label>Total:</label><input type="number" step="260" value="0" min="0"/> <br/>
+            </fieldset>
+        </form>
+
+        </form>
+    </section>
+
 </body>
+
 </html>
