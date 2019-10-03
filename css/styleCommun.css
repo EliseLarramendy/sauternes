@@ -48,6 +48,13 @@ h3{
     padding: 1.3em;
     
 }
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: left;
+    padding: 1.2em;
+}
 
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
