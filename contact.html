@@ -11,6 +11,35 @@
 
 
     <title>Château Dudon - Contact et visites</title>
+    <style>
+        p{
+            text-align: justify;
+            margin-left: 65px;
+
+        }
+        h1 {
+            text-align: center;
+        }
+        #p2 {
+            text-align: center;
+        }
+        input{
+            display: block;
+            
+        }
+        h3{
+            margin-left: 50px;
+        }
+         .demande{
+            width : 300px;
+            height : 200px;
+            border : 1px solid black;
+            
+        }
+        .boutondemerde {
+            display :block;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,18 +81,13 @@
 
 
     <div>
-        visites
-        Les heures de visite :
+        <h1>Contacts</h1>
+        <h2>visites</h2>
+        <p>Les heures de visite :
 
         Nous pouvons vous accueillir tous les jours
-
-        lien vers site de réservation : https://www.ruedesvignerons.com/fr/domaine/160/chateau-dudon
-
-
-
-
-        De 8:00 à 12 :00 et de 14 :00 à 18 :00
-
+        de 8:00 à 12 :00 et de 14 :00 à 18 :00, vous pouvez réserver en cliquant <a href = "https://www.ruedesvignerons.com/fr/domaine/160/chateau-dudon">ici</a>.
+            <br>
 
 
         Prenez rendez-vous si vous souhaitez visiter le week-end,
@@ -76,20 +100,39 @@
 
 
 
-        Mobile : 06 81 73 44 01
+        Mobile : 06 81 73 44 01.
 
 
 
-        Merci de votre visite sur notre site
-        et à bientôt au Château...
+        <p id="p2">Merci de votre visite sur notre site
+        et à bientôt au Château...</p>
 
-        Photo: Evelyne Allien
-
-
-        Formulaire de contact mail
+        Photo: Evelyne Allien</p>
 
 
-
+        <h3>Formulaire de contact mail</h3>
+        <section>
+        <form id="commande" method="post">
+            <fieldset id="commandePersonne">
+                <legend>Vos informations personnelles</legend>
+                
+                <label>Nom</label>
+                <input type="text" name="nom" placeholder="Bacchus" /><br />
+                <label>Prénom</label>
+                <input type="text" name="prenom" placeholder="Dyonisos" /><br />
+                <label>Mail</label>
+                <input type="email" name="email" placeholder="dyonisos.bacchus@sauternes.fr" /><br />
+                <label>Téléphone</label>
+                <input type="tel" name="téléphone" placeholder="0101010101" /><br />
+                <label>Portable</label>
+                <input type="tel" name="portable" placeholder="0607060706" /><br />
+                <label>Votre demande</label>
+                <input type ="comment" name ="commentaire" placeholder="écrivez votre message..." class ="demande">
+                <br> <div class = "boutondemerde">
+                <input type ="button" name="bouton" placeholder ="envoyer" value ="envoyer"/>
+                <input type ="button" name ="bouton" value ="annuler"/>
+            </div>
+            </section>
     </div>
 
 </body>
