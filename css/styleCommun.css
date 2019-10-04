@@ -14,13 +14,11 @@ a {
 }
 header {
   
-    flex: 1 1 70%;
     max-height: 200px;
     order: 2;
     margin: auto;
     padding: 1% 10%;
-    background-color: yellow;
- 
+  
 
 }
 
@@ -161,12 +159,15 @@ aside nav:after{
     content:"◄";
     display:none;
 }
+aside:hover + section{
+    width:70%;
+}
 
 section{
     margin: auto;
     padding: 1% 10%;
     order: 3;
-    flex: 1 1 80%;
+    width:80%;
     clear: right;
 
 }
