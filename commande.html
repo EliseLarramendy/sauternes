@@ -56,120 +56,118 @@
         <form id="commande" method="post">
             <fieldset id="commandePersonne">
                 <legend>Vos informations personnelles</legend>
-                <div class="formulaireGauche">
-                    <input type="radio" id="sexeMr" name="sexe" value="monsieur" checked="checked" required />
-                    <label for="sexeMr">Monsieur</label>
-                    <input type="radio" id="sexeMme" name="sexe" value="madame" required />
-                    <label for="sexeMme">Madame</label><br />
-                    <label>Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Bacchus" required /><br />
-                    <label>Prénom</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Dyonisos" /><br />
-                    <label>Mail</label>
-                    <input type="email" id="email" name="email" placeholder="dyonisos.bacchus@sauternes.fr" /><br />
-                    <label>Adresse</label>
-                    <input type="text" id="adresse" name="adresse" placeholder="1 route des vins" /><br />
-                    <label>Ville</label>
-                    <input type="text" id="ville" name="ville" placeholder="Sauternes" /><br />
-                    <label>Code postal</label>
-                    <input type="number" id="codePostal" name="codePostal" placeholder="33210"
-                        min-value="01000" /><br />
-                </div>
-                <div class="formulaireDroite">
-                    <label>Informations pour la livraison</label>
-                    <input type="text" id="informationlivraison"name="livraison"
-                        placeholder="Livraison souhaitée entre l'apéro du midi et l'apéro du soir. Code porte: 1234*" /><br />
-                    <label>Téléphone</label>
-                    <input type="tel" name="téléphone" placeholder="0101010101" /><br />
-                    <label>Portable</label>
-                    <input type="tel" name="portable" placeholder="0607060706" /><br />
+                <div class="blocFlex">
+                    <div class="formulaireGauche">
+                        <input type="radio" id="sexeMr" name="sexe" value="monsieur" checked="checked" required />
+                        <label for="sexeMr">Monsieur</label>
+                        <input type="radio" id="sexeMme" name="sexe" value="madame" required />
+                        <label for="sexeMme">Madame</label><br />
+                        <label>Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Bacchus" required /><br />
+                        <label>Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Dyonisos" /><br />
+                        <label>Mail</label>
+                        <input type="email" id="email" name="email" placeholder="dyonisos.bacchus@sauternes.fr" /><br />
+                        <label>Adresse</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="1 route des vins" /><br />
+                        <label>Ville</label>
+                        <input type="text" id="ville" name="ville" placeholder="Sauternes" /><br />
+                        <label>Code postal</label>
+                        <input type="number" id="codePostal" name="codePostal" placeholder="33210"
+                            min-value="01000" /><br />
+                    </div>
+                    <div class="formulaireDroite">
+                        <label>Informations pour la livraison</label>
+                        <input type="text" id="informationLivraison" name="livraison"
+                            placeholder="Livraison souhaitée entre l'apéro du midi et l'apéro du soir. Code porte: 1234*" /><br />
+                        <label>Téléphone</label>
+                        <input type="tel" name="téléphone" placeholder="0101010101" /><br />
+                        <label>Portable</label>
+                        <input type="tel" name="portable" placeholder="0607060706" /><br />
+                    </div>
                 </div>
 
             </fieldset>
             <fieldset id="commandeVins">
 
-                    <fieldset id="dudon2013">
-                        <legend>Château Dudon 2015</legend>
-                        <label>Bouteille de 50 cl</label> <label class="petitLabel"> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label class="petitLabel">Prix:</label><input type="number"
-                            value="16.80" readonly /> <label class="petitLabel">Total:</label><input type="number" step="16.80" value="0"
-                            min="0" /> <br />
-                        <label>Bouteille de 75 cl</label> <label class="petitLabel"> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label class="petitLabel">Prix:</label><input type="number"
-                            value="25" readonly /> <label class="petitLabel">Total:</label><input type="number" step="25" value="0"
-                            min="0" />
-                        <br />
-                        <label>Bouteille de 150 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="51" readonly /> <label>Total:</label><input type="number" step="51" value="0"
-                            min="0" />
-                        <br />
-                        <label>Bouteille de 300 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="123" readonly /> <label>Total:</label><input type="number" step="123" value="0"
-                            min="0" /> <br />
-                        <label>Bouteille de 600 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="260" readonly /> <label>Total:</label><input type="number" step="260" value="0"
-                            min="0" /> <br />
-                    </fieldset>
-                    <fieldset id="dudon2014">
-                        <legend>Château Dudon 2014</legend>
-                        <label>Bouteille de 50 cl <span class="italic">Non disponible</span></label> <label> Quantité
-                            :</label>
-                        <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
-                            readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
-                        <label>Bouteille de 75 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="24" readonly /> <label>Total:</label><input type="number" step="24" value="0"
-                            min="0" />
-                        <br />
-                        <label>Bouteille de 150 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="49" readonly /> <label>Total:</label><input type="number" step="49" value="0"
-                            min="0" />
-                        <br />
-                        <label>Bouteille de 300 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="118" readonly /> <label>Total:</label><input type="number" step="118" value="0"
-                            min="0" /> <br />
-                        <label>Bouteille de 600 cl <span class="italic">Non disponible</span></label> <label> Quantité
-                            :</label>
-                        <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
-                            readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
-                    </fieldset>
-                    <fieldset id="dudon2015">
-                        <legend>Château Dudon 2015</legend>
-                        <label>Bouteille de 50 cl <span class="italic">Non disponible</span></label> <label> Quantité
-                            :</label>
-                        <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
-                            readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
-                        <label>Bouteille de 75 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="24" readonly /> <label>Total:</label><input type="number" step="24" value="0"
-                            min="0" />
-                        <br />
-                        <label>Bouteille de 150 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="49" readonly /> <label>Total:</label><input type="number" step="49" value="0"
-                            min="0" />
-                        <br />
-                        <label>Bouteille de 300 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="118" readonly /> <label>Total:</label><input type="number" step="118" value="0"
-                            min="0" /> <br />
-                        <label>Bouteille de 600 cl <span class="italic">Non disponible</span></label> <label> Quantité
-                            :</label>
-                        <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
-                            readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
-                    </fieldset>
-                    <fieldset id="gallien2016">
-                        <legend>Gallien de Château Dudon 2016</legend>
-                        <label>Bouteille de 75 cl</label> <label> Quantité :</label>
-                        <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
-                            value="13.50" readonly /> <label>Total:</label><input type="number" step="13.50" value="0"
-                            min="0" /> <br />
-                    </fieldset>
+                <fieldset id="dudon2013">
+                    <legend>Château Dudon 2015</legend>
+                    <label>Bouteille de 50 cl</label> <label class="petitLabel"> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" id="quantite2015Dudon50" /> <label
+                        class="petitLabel">Prix:</label><input id="prix2015Dudon50" type="number" value="16.80"
+                        readonly /> <label class="petitLabel">Total:</label><input id="total2015Dudon50" type="number"
+                        step="16.80" value="0" min="0" /> <br />
+                    <label>Bouteille de 75 cl</label> <label class="petitLabel"> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label class="petitLabel">Prix:</label><input
+                        type="number" value="25" readonly /> <label class="petitLabel">Total:</label><input
+                        type="number" step="25" value="0" min="0" />
+                    <br />
+                    <label>Bouteille de 150 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="51" readonly /> <label>Total:</label><input type="number" step="51" value="0" min="0" />
+                    <br />
+                    <label>Bouteille de 300 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="123" readonly /> <label>Total:</label><input type="number" step="123" value="0"
+                        min="0" /> <br />
+                    <label>Bouteille de 600 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="260" readonly /> <label>Total:</label><input type="number" step="260" value="0"
+                        min="0" /> <br />
+                </fieldset>
+                <fieldset id="dudon2014">
+                    <legend>Château Dudon 2014</legend>
+                    <label>Bouteille de 50 cl <span class="italic">Non disponible</span></label> <label> Quantité
+                        :</label>
+                    <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
+                        readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
+                    <label>Bouteille de 75 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="24" readonly /> <label>Total:</label><input type="number" step="24" value="0" min="0" />
+                    <br />
+                    <label>Bouteille de 150 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="49" readonly /> <label>Total:</label><input type="number" step="49" value="0" min="0" />
+                    <br />
+                    <label>Bouteille de 300 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="118" readonly /> <label>Total:</label><input type="number" step="118" value="0"
+                        min="0" /> <br />
+                    <label>Bouteille de 600 cl <span class="italic">Non disponible</span></label> <label> Quantité
+                        :</label>
+                    <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
+                        readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
+                </fieldset>
+                <fieldset id="dudon2015">
+                    <legend>Château Dudon 2015</legend>
+                    <label>Bouteille de 50 cl <span class="italic">Non disponible</span></label> <label> Quantité
+                        :</label>
+                    <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
+                        readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
+                    <label>Bouteille de 75 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="24" readonly /> <label>Total:</label><input type="number" step="24" value="0" min="0" />
+                    <br />
+                    <label>Bouteille de 150 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="49" readonly /> <label>Total:</label><input type="number" step="49" value="0" min="0" />
+                    <br />
+                    <label>Bouteille de 300 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="118" readonly /> <label>Total:</label><input type="number" step="118" value="0"
+                        min="0" /> <br />
+                    <label>Bouteille de 600 cl <span class="italic">Non disponible</span></label> <label> Quantité
+                        :</label>
+                    <input type="number" value="0" readonly /> <label>Prix:</label><input type="number" value="0"
+                        readonly /> <label>Total:</label><input type="number" value="0" readonly /> <br />
+                </fieldset>
+                <fieldset id="gallien2016">
+                    <legend>Gallien de Château Dudon 2016</legend>
+                    <label>Bouteille de 75 cl</label> <label> Quantité :</label>
+                    <input type="number" step="1" value="0" min="0" /> <label>Prix:</label><input type="number"
+                        value="13.50" readonly /> <label>Total:</label><input type="number" step="13.50" value="0"
+                        min="0" /> <br />
+                </fieldset>
 
                 <legend>Les vins</legend>
                 <label>Sous-total TTC</label>

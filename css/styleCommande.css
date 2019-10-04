@@ -24,25 +24,31 @@ form>fieldset>legend{
 }
 input[type=text] {
     width: 30%;
-    height: 2em;
+    /* height: 2em; */
     margin: 0.2em;
+    text-align: justify;
+
 }
 #commandePersonne input[type=text] {
     width: 60%;
-    height: 2em;
+    /* height: 2em; */
     margin: 0.2em;
+    text-align: justify;
+
 }
 input[type=email] {
     width: 30%;
-    height: 2em;
+    /* height: 2em; */
     margin: 0.2em;
+    text-align: justify;
 
 }
 input[type=number] {
     width: 10%;
-    height: 2em;
+    /* height: 2em; */
     text-align: center;
     margin: 0.2em;
+
 
 }
 
@@ -60,18 +66,32 @@ legend {
 
 #commandePersonne {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: row;
 }
 
 .formulaireGauche{
+    display: block;
+    order:2;
     width: 45%;
-    margin: auto;
+
 }
 .formulaireDroite{
+    display: block;
+    order:2;
     width: 45%;
-    margin: auto;
+  
 }
 
+.formulaireDroite>input[type=text] {
+    height: 10em;
+
+}
 .petitLabel {
     width: 10%;
+}
+.blocFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
 }
