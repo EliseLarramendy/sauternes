@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta author="Elise et Aubin">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/styleCommun.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styleCommun.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styleCommande.css"/>
 
     <title>Château Dudon - Commande</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <header>
         <h1>Château Dudon et Gallien<h1>
-                <h2>Bon de commande</h2>
+               
     </header>
 
     <aside>
@@ -40,7 +41,7 @@
                 <li><a href="vins.html">Nos vins</a>
                     <ul>
                         <li><a href="dudon.html">Château Dudon et ses millésimes</a></li>
-                        <li><a href="gallien.html">"Gallien de Chateau Dudon et ses millésimes</a></li>
+                        <li><a href="gallien.html">Gallien de Chateau Dudon et ses millésimes</a></li>
                     </ul>
                 </li>
                 <li><a href="commande.html">Bon de commande</a></li>
@@ -51,25 +52,26 @@
     </aside>
 
     <section>
+            <h2>Bon de commande</h2>
         <form id="commande" method="post">
             <fieldset id="commandePersonne">
                 <legend>Vos informations personnelles</legend>
-                <input type="radio" id="sexeMr" name="sexe" value="monsieur" checked="checked" />
+                <input type="radio" id="sexeMr" name="sexe" value="monsieur" checked="checked" required/>
                 <label for="sexeMr">Monsieur</label>
-                <input type="radio" id="sexeMme" name="sexe" value="madame" />
+                <input type="radio" id="sexeMme" name="sexe" value="madame" required/>
                 <label for="sexeMme">Madame</label><br />
                 <label>Nom</label>
-                <input type="text" name="nom" placeholder="Bacchus" /><br />
+                <input type="text" id="nom" name="nom" placeholder="Bacchus" required/><br />
                 <label>Prénom</label>
-                <input type="text" name="prenom" placeholder="Dyonisos" /><br />
+                <input type="text" id="prenom" name="prenom" placeholder="Dyonisos" /><br />
                 <label>Mail</label>
-                <input type="email" name="email" placeholder="dyonisos.bacchus@sauternes.fr" /><br />
+                <input type="email" id="email" name="email" placeholder="dyonisos.bacchus@sauternes.fr" /><br />
                 <label>Adresse</label>
-                <input type="text" name="adresse" placeholder="1 route des vins" /><br />
+                <input type="text" id="adresse" name="adresse" placeholder="1 route des vins" /><br />
                 <label>Ville</label>
-                <input type="text" name="ville" placeholder="Sauternes" /><br />
+                <input type="text" id="ville" name="ville" placeholder="Sauternes" /><br />
                 <label>Code postal</label>
-                <input type="number" name="codePsotal" placeholder="1 route des vins" /><br />
+                <input type="number" id="codePostal" name="codePostal" placeholder="33210" min-value="01000" /><br />
                 <label>Informations pour la livraison</label>
                 <input type="text" name="livraison"
                     placeholder="Livraison souhaitée entre l'apéro du midi et l'apéro du soir. Code porte: 1234*" /><br />
