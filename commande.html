@@ -58,9 +58,9 @@
                 <div class="blocFlex">
                     <div class="formulaireGauche">
                         <input type="radio" id="sexeMr" name="sexe" value="monsieur" checked="checked" required />
-                        <label for="sexeMr" class="petitLabel">Monsieur</label>
+                        <label class="labelRadio"for="sexeMr" class="petitLabel">Monsieur</label>
                         <input type="radio" id="sexeMme" name="sexe" value="madame" required />
-                        <label for="sexeMme" class="petitLabel">Madame</label><br />
+                        <label class="labelRadio"for="sexeMme" class="petitLabel">Madame</label><br />
                         <label>Nom</label>
                         <input type="text" id="nom" name="nom" placeholder="Bacchus" required /><br />
                         <label>Prénom</label>
@@ -238,32 +238,32 @@
             <fieldset id="commandeTransport">
                 <legend>Livraison</legend>
                 <label>Nombre total de bouteilles</label>
-                <input type="number" value="0" step="1" /> <br />
+                <input id="nombreBouteilles" type="number" value="0" step="1" /> <br />
 
                 <label>Mode de livraison</label>
-                <input type="radio" id="retraitChateau" name="modeLivraison" value="retraitChateau" /><Label>Retirer la
+                <input class="labelRadio" type="radio" id="retraitChateau" name="modeLivraison" value="retraitChateau" /><Label>Retirer la
                     commande au château</Label>
-                <input type="radio" id="livraisonDomicile" name="modeLivraison"
+                <input class="labelRadio" type="radio" id="livraisonDomicile" name="modeLivraison"
                     value="livraisonDomicile" /><Label>Livraison à domicile</Label> <br />
                 <label>Montant de la livraison</label> <input type="number" value="0" />
             </fieldset>
             </fieldset>
-            <fieldset>
+            <fieldset id="totalPaiement">
                 <legend>Total et paiement</legend>
                 <label>Montant total de la commande</label>
                 <input type="number" value="0" /> <br />
-                <Label> Mode de règlement</Label>
-                <input type="radio" name="modeReglement" id="reglementCheque" value="cheque" required />
-                <label for="reglementCheque">Chèque bancaire</label>
-                <input type="radio" name="modeReglement" id="reglementVirement" value="virement" required />
-                <label for="regelementVirement">Virement bancaire</label>
-                <input type="radio" name="modeReglement" id="reglementPaypal" value="paypal" checked required />
-                <label for="regelementPaypal">Paypal</label> <br />
+                <Label > Mode de règlement</Label>
+                <input class="pointRadio2" type="radio" name="modeReglement" id="reglementCheque" value="cheque" required />
+                <label class="labelRadio2" for="reglementCheque">Chèque bancaire</label>
+                <input class="pointRadio2"type="radio" name="modeReglement" id="reglementVirement" value="virement" required />
+                <label class="labelRadio2" for="regelementVirement">Virement bancaire</label>
+                <input class="pointRadio2" type="radio" name="modeReglement" id="reglementPaypal" value="paypal" checked required />
+                <label class="labelRadio2" for="regelementPaypal">Paypal</label> <br />
                 <input type="checkbox" name="conditionVente" id="conditionVente" required />
-                <label for="conditionVente"> J'ai lu et j'accepte les <a href="doc/conditionVente.pdf">conditions
+                <label id="validationConditions"conditionVente"> J'ai lu et j'accepte les <a href="doc/conditionVente.pdf">conditions
                         générales de vente</a></label>
             </fieldset>
-            <input type="submit" value="Valider votre commande" />
+            <input class="bouton" type="submit" value="Valider votre commande" />
         </form>
 
         </form>

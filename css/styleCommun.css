@@ -154,6 +154,10 @@ aside:hover ul {
     display: flex;
     flex-flow: column wrap;
 }
+aside ul a:hover {
+    font-size: 2em;
+    color: darkgoldenrod;
+}
 
 aside nav:after{
     content:"◄";
