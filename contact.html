@@ -39,12 +39,20 @@
         .boutondemerde {
             display :block;
         }
+        #evelyne {
+            position: absolute;
+            top : 500px;
+            left : 850px;
+            width : 400px;
+            height : 400px;
+        }
+        
     </style>
 </head>
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Contacts</h1>
 
     </header>
     <aside>
@@ -80,8 +88,8 @@
     </aside>
 
 
-    <div>
-        <h1>Contacts</h1>
+    <section>
+        
         <h2>visites</h2>
         <p>Les heures de visite :
 
@@ -100,19 +108,20 @@
 
 
 
-        Mobile : 06 81 73 44 01.
+        Mobile : 06 81 73 44 01.</p>
 
 
 
         <p id="p2">Merci de votre visite sur notre site
         et à bientôt au Château...</p>
-
-        Photo: Evelyne Allien</p>
-
+            
+        <img src="img/evelyne.jpg" id ="evelyne" /> 
+    
+            
 
         <h3>Formulaire de contact mail</h3>
-        <section>
-        <form id="commande" method="post">
+        
+        <form id="contact" method="post">
             <fieldset id="commandePersonne">
                 <legend>Vos informations personnelles</legend>
                 
@@ -131,9 +140,9 @@
                 <br> <div class = "boutondemerde">
                 <input type ="button" name="bouton" placeholder ="envoyer" value ="envoyer"/>
                 <input type ="button" name ="bouton" value ="annuler"/>
-            </div>
+            
             </section>
-    </div>
+    
 
 </body>
 
